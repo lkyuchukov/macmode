@@ -20,7 +20,7 @@ func main() {
 	var arg string
 	if len(os.Args) == 1 {
 		fmt.Println("usage: macmode [mode]")
-		fmt.Println("mode: can be ight or dark")
+		fmt.Println("mode: can be light or dark")
 		os.Exit(0)
 	}
 
