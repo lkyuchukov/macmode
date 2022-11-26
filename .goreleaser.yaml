@@ -1,0 +1,26 @@
+builds:
+  - binary: macmode
+    goos:
+      - darwin
+    goarch:
+      - amd64
+      - arm64
+    env:
+      - CGO_ENABLED=0
+
+release:
+  prerelease: auto
+
+universal_binaries:
+  - replace: true
+
+brews:
+  -
+    name: macmode
+    homepage: "https://github.com/lkyuchukov/macmode"
+    tap:
+      owner: lkyuchukov
+      name: homebrew-macmode
+
+checksum:
+  name_template: 'checksums.txt'
