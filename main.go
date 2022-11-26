@@ -18,6 +18,12 @@ const script = `
 
 func main() {
 	var arg string
+	if len(os.Args) == 1 {
+		fmt.Println("usage: macmode [mode]")
+		fmt.Println("mode: can be ight or dark")
+		os.Exit(0)
+	}
+
 	switch os.Args[1] {
 	case "dark":
 		arg = "true"
